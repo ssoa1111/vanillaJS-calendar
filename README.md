@@ -60,4 +60,5 @@ setDate: String ( default : YYYY-MM-DD ) - 초기에 선택된 값
 
 ## 후기      
 여러 달력들을 보면 많은 기능들이 있는데 나중에 시간이 된다면 부가기능들을 구현하면 좋을 것 같다.            
-range선택, transition효과, 미구현한 startDay기능, 커스텀이 가능한 옵션들 등등
+range선택, transition효과, 미구현한 startDay기능, 커스텀이 가능한 옵션들 등등                   
+template를 내부에서 모두 그리려고 하다보니 복잡해지고 render의 기능이 아쉽게 되었는데 template를 외부에 작성하면 더 깔끔하게 보일 것 같다.
