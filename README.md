@@ -1,4 +1,4 @@
-[https://ssoa1111.github.io/vanillaJS-calendar/assets/pages/general-card.html](https://ssoa1111.github.io/vanillaJS-calendar/assets/pages/calendar.html)
+[https://ssoa1111.github.io/vanillaJS-calendar/assets/pages/calendar.html](https://ssoa1111.github.io/vanillaJS-calendar/assets/pages/calendar.html)
 
 # VanillaJs-calendar
 바닐라 js로 캘린더 기능 구현
