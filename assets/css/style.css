@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    padding: 3rem;
+}
+
+/* calendar */
+#calendar {
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+}
+
+.arrow-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.month-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.week-wrap {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.week-wrap .week {
+    font-size: 1.25rem;
+}
+
+.month {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+    aspect-ratio: 1;
+}
+
+.day .day-txt {
+    font-size: 1.5rem;
+}
+
+.date-sat {
+    color: blue;
+}
+
+.date-sun {
+    color: red;
+}
+
+.selected {
+    border-radius: 50%;
+    background-color: red;
+}
+
+.selected .day-txt {
+    color: white;
+}
