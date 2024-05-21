@@ -110,7 +110,6 @@ export class Calendar {
             this.actions.clickArrow(e.target)
         })
     }
-
     // render
     render() {
         this.renderArrow()
@@ -118,12 +117,6 @@ export class Calendar {
         this.renderMonth(this.dateArr[this.DATE.Y], Number(this.dateArr[this.DATE.M]) + 1, this.dateArr[this.DATE.D])
 
         this.actions.select(this.$target.querySelector(`[data-day="${this.dateArr[this.DATE.D]}"]`))
-
-        // 토일 표시
-        const sat = this.$target.querySelectorAll(`[data-date="Sat"]`)
-        const sun = this.$target.querySelectorAll(`[data-date="Sun"]`)
-        sat.forEach(date => date.classList.add('date-sat'))
-        sun.forEach(date => date.classList.add('date-sun'))
     }
     renderArrow() { // 이전 다음 화살표 생성
         const arrowWrap = makeDom('div', this.arrowWrap)
@@ -172,6 +165,12 @@ export class Calendar {
         } else {
             monthTotalWrap.append(monthWrapEl)
         }
+
+        // 토일 표시
+        const sat = monthWrapEl.querySelectorAll(`[data-date="Sat"]`)
+        const sun = monthWrapEl.querySelectorAll(`[data-date="Sun"]`)
+        sat.forEach(date => date.classList.add('date-sat'))
+        sun.forEach(date => date.classList.add('date-sun'))
     }
     renderWeek() { // 주 생성
         const WeekWrap = makeDom('div', this.weekWrapClass)
